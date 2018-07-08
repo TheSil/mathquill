@@ -221,6 +221,13 @@ LatexCmds.closecurlybrace = LatexCmds.rbrace = bind(VanillaSymbol, '\\rbrace ', 
 LatexCmds.lbrack = bind(VanillaSymbol, '[');
 LatexCmds.rbrack = bind(VanillaSymbol, ']');
 
+//do nothing symbols
+LatexCmds.displaystyle =  bind(VanillaSymbol, '\\displaystyle ', '&zwnj; ');
+LatexCmds.big =  bind(VanillaSymbol, '\\big ', '&zwnj;');
+LatexCmds.Big =  bind(VanillaSymbol, '\\Big ', '&zwnj;');
+LatexCmds.bigg =  bind(VanillaSymbol, '\\bigg ', '&zwnj;');
+LatexCmds.Bigg =  bind(VanillaSymbol, '\\Bigg ', '&zwnj;');
+
 //various symbols
 LatexCmds.slash = bind(VanillaSymbol, '/');
 LatexCmds.vert = bind(VanillaSymbol,'|');
