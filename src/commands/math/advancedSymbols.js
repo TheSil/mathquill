@@ -218,6 +218,12 @@ LatexCmds.lceil = bind(VanillaSymbol, '\\lceil ', '&#8968;');
 LatexCmds.rceil = bind(VanillaSymbol, '\\rceil ', '&#8969;');
 LatexCmds.opencurlybrace = LatexCmds.lbrace = bind(VanillaSymbol, '\\lbrace ', '{');
 LatexCmds.closecurlybrace = LatexCmds.rbrace = bind(VanillaSymbol, '\\rbrace ', '}');
+LatexCmds.lVert = bind(VanillaSymbol, '\\lVert ', '&#8741;');
+LatexCmds.lvert = bind(VanillaSymbol, '\\lvert ', '|');
+LatexCmds.rVert = bind(VanillaSymbol, '\\rVert ', '&#8741;');
+LatexCmds.rvert = bind(VanillaSymbol, '\\rvert ', '|');
+LatexCmds.langle = bind(VanillaSymbol, '\\langle ', '&lang;');
+LatexCmds.rangle = bind(VanillaSymbol, '\\rangle ', '&rang;');  
 LatexCmds.lbrack = bind(VanillaSymbol, '[');
 LatexCmds.rbrack = bind(VanillaSymbol, ']');
 
