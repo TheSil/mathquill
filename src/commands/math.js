@@ -406,7 +406,7 @@ var MathBlock = P(MathElement, function(_, super_) {
       return LatexCmds['÷'](ch);
     else if (options && options.typingAsteriskWritesTimesSymbol && ch === '*')
       return LatexCmds['×'](ch);
-    else if (cons = CharCmds[ch] || LatexCmds[ch])
+    else if ((ch === '\\' || options && options.isCommand) && (cons = CharCmds[ch] || LatexCmds[ch]))
       return cons(ch);
     else
       return VanillaSymbol(ch);

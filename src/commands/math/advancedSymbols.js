@@ -100,18 +100,13 @@ LatexCmds.H = LatexCmds.Hamiltonian = LatexCmds.quaternions = LatexCmds.Quaterni
   bind(VanillaSymbol,'\\mathbb{H}','&#8461;');
 
 //spacing
+//fixme: for some reason the spaces are not expanded correctly when typing
 LatexCmds.quad = LatexCmds.emsp = bind(VanillaSymbol,'\\quad ','    ');
 LatexCmds.qquad = bind(VanillaSymbol,'\\qquad ','        ');
-/* spacing special characters, gonna have to implement this in LatexCommandInput::onText somehow
-case ',':
-  return VanillaSymbol('\\, ',' ');
-case ':':
-  return VanillaSymbol('\\: ','  ');
-case ';':
-  return VanillaSymbol('\\; ','   ');
-case '!':
-  return Symbol('\\! ','<span style="margin-right:-.2em"></span>');
-*/
+LatexCmds[','] = bind(VanillaSymbol, '\\, ', ' ');
+LatexCmds[':'] = bind(VanillaSymbol, '\\: ', '  ');
+LatexCmds[';'] = bind(VanillaSymbol, '\\; ', '   ');
+LatexCmds['!'] = bind(VanillaSymbol, '\\! ', '<span style="margin-right:-.2em"></span>');
 
 //binary operators
 LatexCmds.diamond = bind(VanillaSymbol, '\\diamond ', '&#9671;');

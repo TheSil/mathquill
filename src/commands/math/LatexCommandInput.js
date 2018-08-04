@@ -33,7 +33,9 @@ CharCmds['\\'] = P(MathCommand, function(_, super_) {
       if (ch.match(/[a-z]/i)) VanillaSymbol(ch).createLeftOf(cursor);
       else {
         this.parent.renderCommand(cursor);
+        cursor.options.isCommand = true
         if (ch !== '\\' || !this.isEmpty()) cursor.parent.write(cursor, ch);
+        cursor.options.isCommand = false
       }
     };
     this.ends[L].keystroke = function(key, e, ctrlr) {
