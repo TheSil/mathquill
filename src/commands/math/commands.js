@@ -77,6 +77,7 @@ LatexCmds.mathbf = bind(Style, '\\mathbf', 'b', 'class="mq-font"');
 LatexCmds.mathsf = bind(Style, '\\mathsf', 'span', 'class="mq-sans-serif mq-font"');
 LatexCmds.mathtt = bind(Style, '\\mathtt', 'span', 'class="mq-monospace mq-font"');
 //text-decoration
+LatexCmds.cancel = bind(Style, '\\cancel', 'span', 'class="mq-non-leaf mq-strikethrough"');
 LatexCmds.underline = bind(Style, '\\underline', 'span', 'class="mq-non-leaf mq-underline"');
 LatexCmds.overline = LatexCmds.bar = bind(Style, '\\overline', 'span', 'class="mq-non-leaf mq-overline"');
 LatexCmds.overrightarrow = bind(Style, '\\overrightarrow', 'span', 'class="mq-non-leaf mq-overarrow mq-arrow-right"');
