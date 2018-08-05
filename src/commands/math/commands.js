@@ -100,7 +100,9 @@ LatexCmds.dot = P(MathCommand, function(_, super_) {
 // [SitePoint docs]: http://reference.sitepoint.com/css/colorvalues
 // [Mozilla docs]: https://developer.mozilla.org/en-US/docs/CSS/color_value#Values
 // [W3C spec]: http://dev.w3.org/csswg/css3-color/#colorunits
-var TextColor = LatexCmds.textcolor = P(MathCommand, function(_, super_) {
+var TextColor = 
+LatexCmds.color =
+LatexCmds.textcolor = P(MathCommand, function(_, super_) {
   _.setColor = function(color) {
     this.color = color;
     this.htmlTemplate =
