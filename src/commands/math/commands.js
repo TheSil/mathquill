@@ -83,6 +83,9 @@ LatexCmds.boxed = bind(Style, '\\boxed', 'span', 'class="mq-non-leaf mq-boxed"')
 LatexCmds.cancel = bind(Style, '\\cancel', 'span', 'class="mq-non-leaf mq-strikethrough"');
 LatexCmds.underline = bind(Style, '\\underline', 'span', 'class="mq-non-leaf mq-underline"');
 LatexCmds.overline = LatexCmds.bar = bind(Style, '\\overline', 'span', 'class="mq-non-leaf mq-overline"');
+LatexCmds.underrightarrow = bind(Style, '\\underrightarrow', 'span', 'class="mq-non-leaf mq-underarrow mq-arrow-right"');
+LatexCmds.underleftarrow = bind(Style, '\\underleftarrow', 'span', 'class="mq-non-leaf mq-underarrow mq-arrow-left"');
+LatexCmds.underleftrightarrow = bind(Style, '\\underleftrightarrow', 'span', 'class="mq-non-leaf mq-underarrow mq-arrow-both"')
 LatexCmds.overrightarrow = bind(Style, '\\overrightarrow', 'span', 'class="mq-non-leaf mq-overarrow mq-arrow-right"');
 LatexCmds.overleftarrow = bind(Style, '\\overleftarrow', 'span', 'class="mq-non-leaf mq-overarrow mq-arrow-left"');
 LatexCmds.overleftrightarrow = bind(Style, '\\overleftrightarrow', 'span', 'class="mq-non-leaf mq-overarrow mq-arrow-both"');

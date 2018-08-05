@@ -385,6 +385,61 @@
   .mq-boxed {
     border: 1px solid black ;
   }
+  
+  .mq-underarrow {
+    min-width: .5em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1px;
+    padding-bottom: 0.2em;
+    text-align: center;
+
+    &:before {
+      display: block;
+      position: relative;
+      bottom: -2.5em;
+      font-size: 0.5em;
+      line-height: 0em;
+      content: '\27A4';
+      text-align: right;
+    }
+    &.mq-arrow-left:before {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+    &.mq-arrow-both {
+      vertical-align: text-bottom;
+
+      &.mq-empty {
+        min-height: 1.23em;
+
+        &:after {
+          top: -0.34em;
+        }
+      }
+      &:before{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+      }
+      &:after {
+        display: block;
+        position: relative;
+        top: -2.3em;
+        font-size: 0.5em;
+        line-height: 0em;
+        content: '\27A4';
+        visibility: visible; //must override .mq-editable-field.mq-empty:after
+        text-align: right;
+      }
+    }
+  }  
 
   .mq-overarrow {
     min-width: .5em;
