@@ -801,6 +801,30 @@ LatexCmds.choose = P(Binomial, function(_) {
   _.createLeftOf = LiveFraction.prototype.createLeftOf;
 });
 
+LatexCmds.pmod = P(MathCommand, function(_, super_) {
+  _.ctrlSeq = '\\pmod';
+  _.htmlTemplate =
+      '<span class="mq-non-leaf">&nbsp;(mod <span>&0</span>)</span>'
+  ;
+  _.textTemplate = ['(', ')'];
+  _.finalizeTree = function() {
+    this.upInto = this.ends[R].upOutOf = this.ends[L];
+    this.downInto = this.ends[L].downOutOf = this.ends[R];
+  };
+});
+
+LatexCmds.bmod = P(MathCommand, function(_, super_) {
+  _.ctrlSeq = '\\bmod';
+  _.htmlTemplate =
+      '<span class="mq-non-leaf">&nbsp;mod <span>&0</span></span>'
+  ;
+  _.textTemplate = ['(', ')'];
+  _.finalizeTree = function() {
+    this.upInto = this.ends[R].upOutOf = this.ends[L];
+    this.downInto = this.ends[L].downOutOf = this.ends[R];
+  };
+});
+
 LatexCmds.editable = // backcompat with before cfd3620 on #233
 LatexCmds.MathQuillMathField = P(MathCommand, function(_, super_) {
   _.ctrlSeq = '\\MathQuillMathField';

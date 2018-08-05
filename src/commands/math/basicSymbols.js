@@ -172,7 +172,7 @@ var AutoOpNames = Options.p.autoOperatorNames = { _maxLength: 9 }; // the set
 var TwoWordOpNames = { limsup: 1, liminf: 1, projlim: 1, injlim: 1 };
 (function() {
   var mostOps = ('arg deg det dim exp gcd hom inf ker lg lim ln log max min sup'
-                 + ' limsup liminf injlim projlim Pr').split(' ');
+                 + ' limsup liminf injlim projlim Pr mod').split(' ');
   for (var i = 0; i < mostOps.length; i += 1) {
     BuiltInOpNames[mostOps[i]] = AutoOpNames[mostOps[i]] = 1;
   }
