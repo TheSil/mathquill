@@ -100,12 +100,11 @@ LatexCmds.H = LatexCmds.Hamiltonian = LatexCmds.quaternions = LatexCmds.Quaterni
   bind(VanillaSymbol,'\\mathbb{H}','&#8461;');
 
 //spacing
-//fixme: for some reason the spaces are not expanded correctly when typing
-LatexCmds.quad = LatexCmds.emsp = bind(VanillaSymbol,'\\quad ','    ');
-LatexCmds.qquad = bind(VanillaSymbol,'\\qquad ','        ');
-LatexCmds[','] = bind(VanillaSymbol, '\\, ', ' ');
-LatexCmds[':'] = bind(VanillaSymbol, '\\: ', '  ');
-LatexCmds[';'] = bind(VanillaSymbol, '\\; ', '   ');
+LatexCmds.quad = LatexCmds.emsp = bind(VanillaSymbol,'\\quad ','&nbsp;&nbsp;&nbsp;&nbsp;');
+LatexCmds.qquad = bind(VanillaSymbol,'\\qquad ','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+LatexCmds[','] = bind(VanillaSymbol, '\\, ', '&nbsp;');
+LatexCmds[':'] = bind(VanillaSymbol, '\\: ', '&nbsp;&nbsp;');
+LatexCmds[';'] = bind(VanillaSymbol, '\\; ', '&nbsp;&nbsp;&nbsp;');
 LatexCmds['!'] = bind(VanillaSymbol, '\\! ', '<span style="margin-right:-.2em"></span>');
 
 //binary operators
